@@ -43,7 +43,7 @@ public class Radix_sort_v3 {
 		
 	}
 
-	private static void radixSort(int[] a) { //незначительно быстрее LSD_sortingV2 (единицы мс), видимо за счёт немного более
+	private static void radixSort(int[] a) { //незначительно быстрее LSD_sortingV3 (единицы мс), видимо за счёт немного более
 										     //короткого R. Но 99% сути не поменялось
 	
 		int R = 256;			

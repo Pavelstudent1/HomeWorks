@@ -50,7 +50,7 @@ public class LSD_sortingV3 {
 		
 	}
 
-	private static void lsdsort(int[] a) { //действительно быстрее ~ в 2 раза (~54 ms против ~114 ms)
+	private static void lsdsort(int[] a) {
 	
 		int R = 256;	//использование полного байта, вместо полубайта в прошлой версии метода,
 						//даёт почти двухкратный прирост: ~28 мс вместо ~54

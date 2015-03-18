@@ -52,7 +52,7 @@ public class LSD_sortingV2 {
 
 	private static void lsdsort(int[] a) { //действительно быстрее ~ в 2 раза (~54 ms против ~114 ms)
 	
-		int R = 16;			//предельное значение бит в полубайте
+		int R = 16;
 		int N = a.length;
 		int[] aux = new int[N];
 		
@@ -91,7 +91,7 @@ public class LSD_sortingV2 {
 		Random random = new Random();
 		
 		for (int i = 0; i < data.length; i++) {
-			data[i] = random.nextInt(Integer.MAX_VALUE); //0 - 999999
+			data[i] = random.nextInt(Integer.MAX_VALUE);
 		}
 		
 		return data;
