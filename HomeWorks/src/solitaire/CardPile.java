@@ -25,11 +25,11 @@ class CardPile {
 	
 	public void setBoundedFlags(){
 		Card tmp = top();
-		while(tmp != flagCard.link){
+		while(tmp != flagCard){
 			tmp.flag = true;
 			tmp = tmp.link;
 		}
-//		tmp.flag = true;
+		if (tmp != null) tmp.flag = true;
 	}
 	
 	

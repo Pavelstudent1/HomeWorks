@@ -51,7 +51,11 @@ public class Solitaire extends Applet {
 		for (int i = 0; i < 13; i++) {
 			if (allPiles[i].includes(x, y)) {
 				if (!Click){
-					if (!allPiles[i].top().isFaceUp()) { allPiles[i].top().flip(); break; }
+					if (allPiles[i].top() != null) {
+						if (!allPiles[i].top().isFaceUp()) {
+							allPiles[i].top().flip(); break;
+							}
+					}else break;
 					tmpPile = allPiles[i];
 					tmpPile.setBoundedFlags();
 					Click = true;
