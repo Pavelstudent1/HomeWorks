@@ -6,7 +6,7 @@ public class DeckPile extends CardPile {
 	
 	private CardPile discardPile;
 	
-	public DeckPile(int x, int y, CardPile dp) {
+	public DeckPile(final int x, final int y, final CardPile dp) {
 		super(x, y);
 		discardPile = dp;
 		
@@ -34,7 +34,7 @@ public class DeckPile extends CardPile {
 	}
 
 	@Override
-	public boolean canTakeCard(Card c) {
+	public boolean canTakeCard(final Card c) {
 		return false;
 	}
 	
@@ -46,7 +46,7 @@ public class DeckPile extends CardPile {
 	
 	
 	@Override
-	public void tapOnCard(Card card) {
+	public void tapOnCard(final Card card) {
 		
 		if (isEmpty()){
 			while(!discardPile.isEmpty()){
@@ -59,7 +59,7 @@ public class DeckPile extends CardPile {
 		}
 	}
 	
-	public void linkWithDiscardPile(CardPile cp){
+	public void linkWithDiscardPile(final CardPile cp){
 		discardPile = cp;
 	}
 	
